@@ -5,7 +5,7 @@ import { NotificationExample } from '@/components/feedback/NotificationExample';
 
 export default function Home() {
   return (
-    <Stack spacing={2} alignItems="flex-start">
+    <Stack spacing={2} sx={{ alignItems: 'flex-start' }}>
       <Typography variant="h3" component="h1">
         Project Foundation Canon
       </Typography>

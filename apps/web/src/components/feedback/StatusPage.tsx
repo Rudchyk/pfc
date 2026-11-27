@@ -16,9 +16,7 @@ export function StatusPage({ code, title, description, onRetry }: StatusPageProp
   return (
     <Stack
       spacing={2}
-      alignItems="center"
-      textAlign="center"
-      sx={{ flex: 1, justifyContent: 'center', py: 6 }}
+      sx={{ flex: 1, alignItems: 'center', textAlign: 'center', justifyContent: 'center', py: 6 }}
     >
       <Typography variant="h2" component="p" color="text.secondary">
         {code}
@@ -27,7 +25,12 @@ export function StatusPage({ code, title, description, onRetry }: StatusPageProp
         {title}
       </Typography>
       <Typography color="text.secondary">{description}</Typography>
-      <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap justifyContent="center">
+      <Stack
+        direction="row"
+        spacing={1}
+        useFlexGap
+        sx={{ flexWrap: 'wrap', justifyContent: 'center' }}
+      >
         {onRetry && (
           <Button variant="contained" onClick={onRetry}>
             Спробувати ще раз

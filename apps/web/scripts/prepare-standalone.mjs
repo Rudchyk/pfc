@@ -1,6 +1,6 @@
 import { access, cp, mkdir } from 'node:fs/promises';
 import { join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, URL } from 'node:url';
 
 const appRoot = fileURLToPath(new URL('../', import.meta.url));
 const standaloneApp = join(appRoot, '.next', 'standalone', 'apps', 'web');
