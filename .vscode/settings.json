@@ -1,6 +1,10 @@
 {
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never"
+  },
+  "eslint.format.enable": false,
   "prettier.requireConfig": true,
   "prettier.prettierPath": "./node_modules/prettier",
   "[javascript]": {

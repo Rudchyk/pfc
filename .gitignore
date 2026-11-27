@@ -18,3 +18,6 @@ build/
 .DS_Store
 Thumbs.db
 tmp/
+
+# Generated Git hook helpers
+.husky/_/
