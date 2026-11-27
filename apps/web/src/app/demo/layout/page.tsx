@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 
-export default function SmokeLayoutPage() {
+export default function DemoLayoutPage() {
   const [expanded, setExpanded] = useState(false);
 
   return (

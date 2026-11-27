@@ -1,7 +1,7 @@
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-export default function SmokeGlobalErrorPage() {
+export default function DemoGlobalErrorPage() {
   return (
     <Stack spacing={2}>
       <Typography variant="h4" component="h1">

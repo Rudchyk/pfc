@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 import { useNotifier } from '@/providers/NotificationProvider';
 
-export default function SmokeNotificationsPage() {
+export default function DemoNotificationsPage() {
   const notify = useNotifier();
 
   return (

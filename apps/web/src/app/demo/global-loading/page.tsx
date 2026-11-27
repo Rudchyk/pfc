@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import { useGlobalLoading } from '@/providers/LoadingProvider';
 import { useNotifier } from '@/providers/NotificationProvider';
 
-export default function SmokeGlobalLoadingPage() {
+export default function DemoGlobalLoadingPage() {
   const beginLoading = useGlobalLoading();
   const notify = useNotifier();
 

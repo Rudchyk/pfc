@@ -94,16 +94,24 @@ pnpm start:web
 
 ### Демонстрація системних компонентів
 
-Для швидкої ручної перевірки запустіть `pnpm dev:web`.
+Запустіть `pnpm dev:web` і відкрийте [каталог демонстрацій](http://localhost:3000/demo).
+У desktop-версії демонстрації доступні через меню в header, у мобільній — через повноекранне меню зліва.
 
-| Маршрут                                                           | Призначення                                                       |
-| ----------------------------------------------------------------- | ----------------------------------------------------------------- |
-| [/](http://localhost:3000/)                                       | Базовий UI, тема, header, footer та сповіщення.                   |
-| [/non-existent-page](http://localhost:3000/non-existent-page)     | Демонстрація сторінки 404.                                        |
-| [/smoke-error](http://localhost:3000/smoke-error)                 | Демонстрація Error Boundary.                                      |
-| [/smoke-loading](http://localhost:3000/smoke-loading)             | Демонстрація Loader + Skeleton.                                   |
-| [/smoke-notifications](http://localhost:3000/smoke-notifications) | Демонстрація Notification.                                        |
-| [/smoke-layout](http://localhost:3000/smoke-layout)               | Демонстрація розташування Footer на коротких та довгих сторінках. |
-| [/smoke-global-error](http://localhost:3000/smoke-global-error)   | Демонстрація глобальної обробки помилок застосунку.               |
+| Маршрут | Призначення |
+| --- | --- |
+| [/](http://localhost:3000/) | Головна сторінка, тема, header, footer та сповіщення. |
+| [/demo](http://localhost:3000/demo) | Каталог усіх демонстрацій. |
+| [/demo/404](http://localhost:3000/demo/404) | Справжня сторінка 404 для навмисно неіснуючого маршруту. |
+| [/demo/error](http://localhost:3000/demo/error) | Error Boundary. |
+| [/demo/global-error](http://localhost:3000/demo/global-error) | Глобальна обробка помилок застосунку. |
+| [/demo/loading](http://localhost:3000/demo/loading) | Loader та Skeleton із затримкою 3 секунди. |
+| [/demo/global-loading](http://localhost:3000/demo/global-loading) | Глобальний індикатор, паралельні операції та помилки. |
+| [/demo/notifications](http://localhost:3000/demo/notifications) | Чотири типи сповіщень і черга. |
+| [/demo/layout](http://localhost:3000/demo/layout) | Footer на коротких і довгих сторінках. |
+| [/demo/theme](http://localhost:3000/demo/theme) | Темізація, кольори та типографіка. |
 
-Маршрути з навмисними помилками доступні лише в development-режимі.
+Демонстрації PFC призначені для development і production. Навмисні помилки та затримки виконуються лише під час відповідного запиту або дії користувача. Production-перевірку виконуємо окремо перед розгортанням. У реальних продуктах демонстраційні маршрути слід видалити або обмежити доступ до них перед публічним запуском.
+
+## Плани реалізації
+
+[Web Foundation](docs/plans/web-foundation.md) — необов'язковий план для створення базового вебзастосунку. Застосовується за окремою вказівкою власника проєкту, а не як обов'язковий набір правил для агентів.
