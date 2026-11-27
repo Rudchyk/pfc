@@ -3,7 +3,7 @@
 ## General Rules
 
 - The agent MUST follow the committed formatting configuration of the repository.
-- Each file type MUST have exactly one authoritative formatter.
+- Each file MUST have exactly one authoritative formatter within its application or package scope.
 - Formatting MUST be deterministic and consistent across operating systems, editors, local CLI execution, and CI.
 - Formatters and their plugins MUST use project-local, lockfile-pinned dependencies.
 - The agent MUST NOT rely on globally installed formatter versions.
@@ -39,7 +39,9 @@ Binary files MUST NOT be normalized or formatted as text.
 | Markdown, MDX                    | Prettier                   |
 | WordPress PHP                    | PHPCBF                     |
 
-- The agent MUST NOT introduce competing formatters for the same file type.
+- The agent MUST NOT introduce competing formatters within the same application or package scope.
+- Different applications MAY use different formatters for the same file type, provided their scopes do not overlap.
+- Stack-specific formatter configurations MUST NOT override unrelated applications or packages.
 - ESLint, Stylelint, PHPCS, and other validators MUST NOT act as competing automatic formatters.
 - The agent MUST NOT introduce an automatic formatter for an unsupported language without an approved formatting policy.
 
@@ -85,7 +87,7 @@ When Tailwind CSS class sorting is enabled:
 
 ## WordPress PHP
 
-When WordPress is used:
+Within WordPress application or package scopes:
 
 - PHPCBF MUST be the sole PHP formatter.
 - PHPCS and PHPCBF MUST use the same project-local `phpcs.xml.dist` ruleset.
@@ -108,6 +110,8 @@ When VS Code is used:
 - `prettier.requireConfig` MUST be enabled.
 - Prettier MUST resolve the project-local installation.
 - Default formatters MUST be assigned by language.
+- When applications use different formatters for the same language, editor integration MUST respect application boundaries.
+- The agent MUST NOT configure a repository-wide language formatter that conflicts with application-specific formatting rules.
 - The agent MUST NOT configure competing ESLint or Stylelint fix-on-save actions.
 - Project formatting settings and extension recommendations MUST be version-controlled.
 - Personal editor preferences MUST NOT override committed formatting rules.
