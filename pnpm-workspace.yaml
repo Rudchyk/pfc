@@ -3,3 +3,7 @@ packages:
   - 'packages/*'
 
 engineStrict: true
+
+allowBuilds:
+  sharp: false
+  unrs-resolver: false
