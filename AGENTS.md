@@ -12,3 +12,8 @@
 
 - Before creating, modifying, or formatting files, follow
   [Code and Documentation Formatting](docs/agents/formatting.md).
+
+## Linting and Git Hooks
+
+- Before linting, configuring quality checks, or committing changes, follow
+  [Linting and Git Hooks](docs/agents/linting.md).

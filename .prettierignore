@@ -6,3 +6,4 @@ vendor/
 .cache/
 tmp/
 pnpm-lock.yaml
+.husky/_/
