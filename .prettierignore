@@ -1,0 +1,8 @@
+node_modules/
+dist/
+build/
+coverage/
+vendor/
+.cache/
+tmp/
+pnpm-lock.yaml

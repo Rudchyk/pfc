@@ -7,3 +7,8 @@
 
 - Before creating or switching branches or selecting a pull request target, follow
   [Git Branching & Naming Convention](docs/agents/git-branching.md).
+
+## Formatting
+
+- Before creating, modifying, or formatting files, follow
+  [Code and Documentation Formatting](docs/agents/formatting.md).
