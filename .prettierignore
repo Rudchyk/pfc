@@ -7,3 +7,15 @@ vendor/
 tmp/
 pnpm-lock.yaml
 .husky/_/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+
+# Turborepo
+.turbo/

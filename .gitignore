@@ -21,3 +21,21 @@ tmp/
 
 # Generated Git hook helpers
 .husky/_/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+
+# Turborepo
+.turbo/
+
+# Test artifacts
+coverage/
+
+# Private keys and certificates
+*.pem
