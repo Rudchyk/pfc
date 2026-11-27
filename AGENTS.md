@@ -17,3 +17,8 @@
 
 - Before linting, configuring quality checks, or committing changes, follow
   [Linting and Git Hooks](docs/agents/linting.md).
+
+## Next.js Web Foundation
+
+- Before changing Next.js applications or their UI and standalone deployment foundations, follow
+  [Next.js Web Foundation](docs/agents/web-foundation.md).
