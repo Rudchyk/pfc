@@ -1,0 +1,11 @@
+{
+  "name": "pfc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25",
+    "pnpm": ">=12 <13"
+  },
+  "packageManager": "pnpm@12.23.0"
+}
