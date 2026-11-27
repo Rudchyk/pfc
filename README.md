@@ -91,3 +91,19 @@ pnpm start:web
 - `useGlobalLoading()` — початок операції повертає функцію завершення; викликати її у `finally`. Індикатор не приховується, доки всі активні операції не завершені.
 
 Тести (Vitest, Playwright) і Lighthouse ще не підключено.
+
+### Демонстрація системних компонентів
+
+Для швидкої ручної перевірки запустіть `pnpm dev:web`.
+
+| Маршрут                                                           | Призначення                                                       |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+| [/](http://localhost:3000/)                                       | Базовий UI, тема, header, footer та сповіщення.                   |
+| [/non-existent-page](http://localhost:3000/non-existent-page)     | Демонстрація сторінки 404.                                        |
+| [/smoke-error](http://localhost:3000/smoke-error)                 | Демонстрація Error Boundary.                                      |
+| [/smoke-loading](http://localhost:3000/smoke-loading)             | Демонстрація Loader + Skeleton.                                   |
+| [/smoke-notifications](http://localhost:3000/smoke-notifications) | Демонстрація Notification.                                        |
+| [/smoke-layout](http://localhost:3000/smoke-layout)               | Демонстрація розташування Footer на коротких та довгих сторінках. |
+| [/smoke-global-error](http://localhost:3000/smoke-global-error)   | Демонстрація глобальної обробки помилок застосунку.               |
+
+Маршрути з навмисними помилками доступні лише в development-режимі.

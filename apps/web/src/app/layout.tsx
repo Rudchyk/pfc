@@ -6,6 +6,7 @@ import type { ReactNode } from 'react';
 import { SiteFooter } from '@/components/layout/SiteFooter';
 import { SiteHeader } from '@/components/layout/SiteHeader';
 import { AppProviders } from '@/providers/AppProviders';
+import { GlobalErrorDemo } from '@/components/feedback/GlobalErrorDemo';
 
 import './globals.css';
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             maxWidth="lg"
             sx={{ flex: 1, display: 'flex', flexDirection: 'column', py: 4 }}
           >
+            <GlobalErrorDemo />
             {children}
           </Container>
           <SiteFooter />
