@@ -32,23 +32,23 @@ Branch names MUST:
 
 ### Primary Branch Types
 
-| Type | Purpose |
-|---|---|
-| `feat/` | New functionality |
-| `fix/` | Bug fixes |
-| `hotfix/` | Urgent production fixes |
-| `chore/` | Maintenance and technical changes |
-| `docs/` | Documentation |
+| Type      | Purpose                           |
+| --------- | --------------------------------- |
+| `feat/`   | New functionality                 |
+| `fix/`    | Bug fixes                         |
+| `hotfix/` | Urgent production fixes           |
+| `chore/`  | Maintenance and technical changes |
+| `docs/`   | Documentation                     |
 
 ### Additional Branch Types
 
-| Type | Purpose |
-|---|---|
+| Type        | Purpose                                           |
+| ----------- | ------------------------------------------------- |
 | `refactor/` | Internal restructuring without behavioral changes |
-| `test/` | Test-related changes |
-| `ci/` | CI/CD and automation |
-| `audit/` | Auditing and diagnostics |
-| `perf/` | Performance optimization |
+| `test/`     | Test-related changes                              |
+| `ci/`       | CI/CD and automation                              |
+| `audit/`    | Auditing and diagnostics                          |
+| `perf/`     | Performance optimization                          |
 
 Primary branch types SHOULD be preferred.
 
@@ -135,9 +135,9 @@ The agent MUST NOT:
 
 **Epic integration example:**
 
-| Issue | Head branch | Pull request base |
-|---|---|---|
-| #101 (sub-task of #100) | `feat/101-user-profile` | `feat/100-authentication` |
+| Issue                   | Head branch                | Pull request base         |
+| ----------------------- | -------------------------- | ------------------------- |
+| #101 (sub-task of #100) | `feat/101-user-profile`    | `feat/100-authentication` |
 | #102 (sub-task of #100) | `fix/102-session-redirect` | `feat/100-authentication` |
-| #107 (sub-task of #100) | `test/107-auth-service` | `feat/100-authentication` |
-| #100 (epic) | `feat/100-authentication` | `main` |
+| #107 (sub-task of #100) | `test/107-auth-service`    | `feat/100-authentication` |
+| #100 (epic)             | `feat/100-authentication`  | `main`                    |
